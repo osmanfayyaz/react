@@ -1,9 +1,12 @@
 import React from 'react';
 
-const person= () =>{
+const person= (props) =>{
     return (
-    <p>Hye my First Person Function</p>,
-    <p>Hye my First React Git Push</p>
+    <p>Hye I am <b>{props.name}</b> my age is <b>{props.age}</b> and i am <b>{props.status}</b></p>,
+    <p>Hye I am <b>{props.name}</b> my age is <b>{props.age}</b> and i am <b>{props.status}</b></p>,
+    <p>Hye I am <b>{props.name}</b> my age is <b>{props.age}</b> and i am <b>{props.status}</b></p>   
+    
+    
     );
 }
 export default person;
