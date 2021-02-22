@@ -12,16 +12,25 @@ class App extends Component {
       
     ]
   }
+  personHandler= ()=>{
+    // console.log("kicked");
+    this.setState({
+      person:[
+        {name:'Hafiz',age:27,status:'single'},
+        {name:'Zubair',age:23,status:'single'},
+        {name:'Mannan',age:25,status:'Married'}
+        
+      ]
+    })
+  }
   render() {
     return ( 
       <div className="App">
          <h1>Welcome To Ecare!!!</h1> 
-         <button>Submit</button>
+         <button onClick={this.personHandler}>Submit</button>
          <Person name={this.state.person[0].name} age={this.state.person[0].age} status={this.state.person[0].status}/>   
          <Person name={this.state.person[2].name} age={this.state.person[1].age} status={this.state.person[2].status}/>   
          <Person name={this.state.person[1].name} age={this.state.person[2].age} status={this.state.person[1].status}/>   
-         
-         
       </div>
       
     );
